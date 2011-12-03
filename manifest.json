@@ -1,0 +1,20 @@
+{
+	"BundleType": "Application",
+	"AppName":"Time Machine",
+	"SupportedLanguages":[
+		"en"
+	],
+	"AppDescription":{
+		"en":"Discover your own favorites"
+	},
+	"AppIcon":{
+		"36x18" :"timemachine.png"
+	},
+	"RequiredPermissions":[
+		"http://*.spotify.com"
+	],
+	"AppName":{
+		"Time Machine"
+	},
+	"VendorIdentifier": "com.krikelin.timemachine"
+}

@@ -1,0 +1,43 @@
+<!--
+ /*
+ * Copyright (C) 2011 Alexander Forselius
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Timemachine</title>
+		<link rel="stylesheet" href="sp://import/css/adam.css">
+		<link rel="stylesheet" href="sp://import/css/api.css">
+		<link rel="stylesheet" href="tm.css">
+		<script src="js/jquery-1.7.1.min.js" language="javascript"></script>
+		<script src="js/script.js" language="javascript"></script>
+	</head>
+	<body onload="sp = getSpotifyApi(1);flamingo = sp.require('flamingo'); flamingo.init()">
+		<header>
+			<span style="float: left">
+				<b>Time Machine</b>
+				<p>Travel back and discover your old favorites</p>
+			</span>
+			<div class="controls right">
+				<button class="button" onclick="window.location= back()">-</button> <span class="display" 
+				id="time">2011</span><button class="button" onclick="window.location = forward()">+</button>	
+			</div>
+		</header>
+		<div id="cd" onscroll="scroll">
+		</div>
+	</body>
+</html>
