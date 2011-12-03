@@ -26,14 +26,14 @@ function init(){
 	
 		var tabs = sp.core.getArguments();
 	
-	var year = new Date().getYear();
+	var year = new Date().getFullYear();
 	if(tabs.length > 1){
 		year=parseInt(tabs[1]);
 	}
 	find(year, false, cur_page);
 	sp.core.addEventListener("argumentsChanged", function(){
 		var tabs = sp.core.getArguments();
-		var year = new Date().getYear();
+		var year = new Date().getFullYear();
 		if(tabs.length > 1){
 			year=parseInt(tabs[1]);
 		}
