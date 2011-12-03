@@ -73,11 +73,16 @@ function find(year,append,page){
 			}catch(e){
 			}
 			console.log(customList);
-			
-			document.body.appendChild(customList.node);
+			if(!append){
+				try{
+					output.removeChild(output.firstChild);
+				}catch(e){
+				}
+			}
+			output.appendChild(customList.node);
 			customList.node.parentNode.style.height = height;
 			console.log(height);
-			customList.node.onscroll = scroll;
+			//customList.node.onscroll = scroll;
 			document.getElementsByClassName("sp-list")[0].style.height = height;
 		}
 	};
